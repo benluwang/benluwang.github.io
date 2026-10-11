@@ -15,6 +15,25 @@ No package installation or build step is required.
 GitHub Pages serves the root of the `main` branch. A `.nojekyll` file keeps it buildless.
 Push changes to `main` to update the site.
 
+## Private visitor analytics
+
+Umami Cloud collects pageviews, traffic referrers, and approximate country/region/city.
+Open https://cloud.umami.is/analytics/us/websites with the owner's account to view
+the homepage's Overview and Realtime tabs. Keep Share URLs disabled and the website
+in the personal workspace to keep the dashboard private. No public counter or
+analytics credentials are included in the homepage; the public website ID only
+identifies where the tracker sends visits.
+
+The tracker runs only on `benluwang.github.io`, excludes section hashes from page
+URLs, and respects browser Do Not Track. Local previews are not counted. Ad blockers
+and browser privacy settings may prevent collection. Referrers may be unavailable,
+and IP-derived locations are approximate; these metrics do not identify visitors
+by name. Analytics begins when the script is deployed, and setup verification
+visits are included in the first counts.
+
+The Hobby plan is free for one website, with 100K events per month and six months
+of data retention (see https://umami.is/pricing for current limits).
+
 ## Photo and publication figures
 
 The profile photo is the supplied original, copied without rewriting or adding metadata.
