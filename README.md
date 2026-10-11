@@ -56,6 +56,7 @@ Paper figures retain the rights and licensing of their original publications.
 - UMass BioNLP people: https://bio-nlp.github.io/pages/people.html
 - ZJUI profile and Class of 2024: https://zjui.intl.zju.edu.cn/news/2664
 - Degrees, research appointments, and exact date ranges: https://www.linkedin.com/in/benlu-wang-676602326/ (owner profile, checked October 11, 2026)
+- Faculty named in research experience: supplied by the owner; linked to https://armancohan.com/, https://medicine.yale.edu/profile/chinsiang-ong/, and https://www.cics.umass.edu/about/directory/hong-yu
 - MedQA-MM venue and authors: https://arxiv.org/abs/2609.03261
 - ICLR proceedings: https://proceedings.iclr.cc/paper_files/paper/2026/hash/a7060588538c3ca1ef2fb071db9e5630-Abstract-Conference.html
 - ICLR 2026 Poster presentation: https://iclr.cc/virtual/2026/poster/10008091
