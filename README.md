@@ -44,7 +44,7 @@ The same framing scales to desktop and mobile; the original face and expression 
 
 Publication figures come from the corresponding public papers or author repositories:
 
-- MedQA-MM: Figure 8, https://arxiv.org/html/2609.03261v2/images/MEDQA_MM.png
+- MedQA-MM: Figure 2, https://arxiv.org/html/2609.03261v2/pipeline.png (the original PNG, preserved at 759×434; click the thumbnail to view the complete figure)
 - MedThinkVQA: Figure 1, https://raw.githubusercontent.com/benluwang/MedThinkVQA/main/assets/figure1.png
 - CPTCoder: Figure 1, page 2, https://aclanthology.org/2026.acl-demo.60.pdf
 - From Scores to Steps: Figure 3, page 5, https://aclanthology.org/2025.emnlp-main.548.pdf
