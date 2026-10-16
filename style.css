@@ -51,6 +51,11 @@ svg { width: 17px; height: 17px; flex-shrink: 0; fill: none; stroke: currentColo
 .profile-links a { display: flex; align-items: flex-start; gap: 10px; font-size: 15px; line-height: 1.5; color: var(--ink); }
 .profile-links a:hover { color: var(--link); }
 .profile-links svg { margin-top: 3px; color: var(--muted); }
+.profile .icon-location { color: #b3653f; }
+.profile .icon-email { color: #c25345; }
+.profile .icon-scholar { color: #356ac3; }
+.profile .icon-github { color: #7355a4; }
+.profile .icon-lab { color: #23816c; }
 .profile-email { display: flex; align-items: flex-start; gap: 10px; font-size: 15px; line-height: 1.5; }
 .profile-links .email-address { display: block; font-size: 12px; color: var(--muted); margin-top: 2px; }
 .profile-note { margin-top: 22px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); }
