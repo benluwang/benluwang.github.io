@@ -15,6 +15,17 @@ No package installation or build step is required.
 GitHub Pages serves the root of the `main` branch. A `.nojekyll` file keeps it buildless.
 Push changes to `main` to update the site.
 
+## Search visibility
+
+The homepage includes a canonical URL, descriptive title, and WebSite/ProfilePage/Person
+structured data connecting Benlu Wang's public academic profiles. `robots.txt` allows
+crawling and points to `sitemap.xml`, which lists the homepage. Update the sitemap's
+`lastmod` only after a meaningful page change.
+
+Use Google Search Console's URL Inspection for the actual indexing status, submit
+the sitemap there, and request indexing after significant changes. These signals
+help discovery and interpretation; they do not guarantee indexing or search rank.
+
 ## Private visitor analytics
 
 Umami Cloud collects pageviews, traffic referrers, and approximate country/region/city.
