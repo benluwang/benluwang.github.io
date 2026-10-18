@@ -19,7 +19,7 @@ Push changes to `main` to update the site.
 
 The homepage includes a canonical URL, descriptive title, and WebSite/ProfilePage/Person
 structured data connecting Benlu Wang's public academic profiles. `robots.txt` allows
-crawling and points to `sitemap.xml`, which lists the homepage and the two author full-text pages. Update the sitemap's
+crawling and points to `sitemap.xml`, which lists the homepage, publication index, and individual paper pages. Update the sitemap's
 `lastmod` only after a meaningful page change.
 
 Use Google Search Console's URL Inspection for the actual indexing status, submit
@@ -93,3 +93,10 @@ Each page is itself the complete HTML full text. The PDFs exceed the Scholar
 5 MB PDF guideline, so they remain ordinary downloads and are not declared as
 `citation_pdf_url`. Keep metadata and displayed version notes consistent with
 the corresponding manuscripts when updating these pages.
+
+`papers/` also lists CPTCoder, MedRaC, Patient Education, Hippocrates-o1, and
+MSMedCap, with exact version notes. Published PDFs or author preprints are
+preserved without rewriting. PDFs under 5 MB have same-directory
+`citation_pdf_url` metadata; larger manuscripts use complete HTML full text.
+The JNCCN BPI26-028 item links to its official record rather than a local
+full-text copy.

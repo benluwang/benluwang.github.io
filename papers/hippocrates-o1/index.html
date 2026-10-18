@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hippocrates-o1: A Guideline-Aware, Orchestrated, Self-Refining Protocol for Specialty-Specific Clinical Reasoning | Benlu Wang</title>
+  <meta name="description" content="Hippocrates-o1: a medRxiv preprint on guideline-aware clinical reasoning, posted December 5, 2025.">
+  <meta name="citation_title" content="Hippocrates-o1: A Guideline-Aware, Orchestrated, Self-Refining Protocol for Specialty-Specific Clinical Reasoning">
+  <meta name="citation_author" content="Benlu Wang">
+  <meta name="citation_author" content="Elizabeth Schaefer">
+  <meta name="citation_author" content="Nicole Aguirre">
+  <meta name="citation_author" content="Juncheng Huang">
+  <meta name="citation_author" content="Xiawei Li">
+  <meta name="citation_author" content="Santhi Raj Kolamuri">
+  <meta name="citation_author" content="Lee Ying">
+  <meta name="citation_author" content="Xinyue Li">
+  <meta name="citation_author" content="Grace Chao">
+  <meta name="citation_author" content="Sheryl S. Ang">
+  <meta name="citation_author" content="Prashanth Vallabhajosyula">
+  <meta name="citation_author" content="Harlan Krumholz">
+  <meta name="citation_author" content="Karen E. Gibbs">
+  <meta name="citation_author" content="Sara I. Pai">
+  <meta name="citation_author" content="Eric B. Schneider">
+  <meta name="citation_author" content="Arman Cohan">
+  <meta name="citation_author" content="Chin Siang Ong">
+  <meta name="citation_publication_date" content="2025/12/05">
+  <meta name="citation_online_date" content="2025/12/05">
+  <meta name="citation_journal_title" content="medRxiv">
+  <meta name="citation_doi" content="10.64898/2025.12.04.25341678">
+  <meta name="citation_pdf_url" content="https://benluwang.github.io/papers/hippocrates-o1/paper.pdf">
+  <link rel="canonical" href="https://benluwang.github.io/papers/hippocrates-o1/">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../papers.css">
+</head>
+<body>
+<header class="author-page-header">
+  <a href="../../">Benlu Wang · Publications</a>
+  <nav class="author-page-nav" aria-label="Paper links">
+    <a href="paper.pdf">PDF</a>
+    <a href="https://www.medrxiv.org/content/10.64898/2025.12.04.25341678v1">medRxiv</a>
+    <a href="https://www.medrxiv.org/content/10.64898/2025.12.04.25341678v1.full">Official full text</a>
+    <a href="https://doi.org/10.64898/2025.12.04.25341678">DOI</a>
+    <a href="citation.bib">BibTeX</a>
+    <a href="#citation">Citation</a>
+  </nav>
+  <p class="author-version">medRxiv preprint · Posted December 5, 2025 · Version 1 · Not peer reviewed. The complete preprint is available as a PDF; this page presents its abstract and citation.</p>
+</header>
+<main class="author-page-main">
+  <article class="ltx_document">
+    <h1 class="ltx_title_document">Hippocrates-o1: A Guideline-Aware, Orchestrated, Self-Refining Protocol for Specialty-Specific Clinical Reasoning</h1>
+    <p class="author-names">Benlu Wang, Elizabeth Schaefer, Nicole Aguirre, Juncheng Huang, Xiawei Li, Santhi Raj Kolamuri, Lee Ying, Xinyue Li, Grace Chao, Sheryl S. Ang, Prashanth Vallabhajosyula, Harlan Krumholz, Karen E. Gibbs, Sara I. Pai, Eric B. Schneider, Arman Cohan, Chin Siang Ong</p>
+    <section class="ltx_abstract" aria-labelledby="abstract-title">
+      <h2 class="ltx_title_section" id="abstract-title">Abstract</h2>
+      <h3>Background</h3>
+<p>Clinical decision support requires language models that provide guideline-aligned, context-aware reasoning with clear justification. Many existing benchmarks emphasize multiple-choice or short-form question answering and mainly capture factual recall rather than longitudinal clinical reasoning from extended clinical notes. Hippocrates-o1 is a family of domain-tailored clinical reasoning pipelines that combine structured prompts, guideline-informed retrieval, and iterative self-refinement across oncology, general surgery, and vascular surgery.</p><h3>Methods</h3>
+<p>Real-world head and neck cancer cases were drawn from the MIMIC-IV-Note database, with a subset (n=20) randomly selected for detailed annotation. Six physicians adjudicated treatment phase and intent using structured criteria and rated model outputs. For each case, we generated outputs using both a general-purpose baseline model (<i>VanillaLLM</i>) and our oncology-specific reasoning model, <i>Hippocrates-Karkinos-o1</i>. Experts evaluated the outputs across five dimensions on a scale of 1 to 5: Clinical Knowledge Application, Contextual Understanding, Reasoning Transparency, Chain-of-Thought Quality, and Hallucination Audit. Overall Reasoning was the mean of domain scores. To explore whether the approach could extend beyond oncology, we also processed inguinal hernia and aortic aneurysm cases through <i>Hippocrates-Chirurgos-o1</i> and <i>Hippocrates-Angios-o1</i> domain adaptations.</p><h3>Results</h3>
+<p>Across paired ratings, <i>Hippocrates-Karkinos-o1</i> improved Overall Reasoning from 3.40±0.90 to 4.00±0.73 (p&lt;0.001). Domain scores increased for Clinical Knowledge Application (2.87±1.20 to 3.70±1.03), Contextual Understanding (3.48±0.95 to 3.98±0.95), Hallucination Audit (3.90±1.32 to 4.74±0.76), Reasoning Transparency (3.45±1.02 to 3.86±0.87), and Chain-of-Thought Quality (3.32±1.04 to 3.69±1.00), all p≤0.001. Surgical and vascular adaptations showed parallel qualitative improvements.</p><h3>Conclusions</h3>
+<p>The Hippocrates-o1 protocol improved reasoning fidelity, guideline alignment, and factual grounding relative to a general-purpose model and generalized across oncology, surgery, and vascular care. Orchestrated retrieval and self-refinement provide a reproducible template for evaluating and enhancing clinical reasoning in medical AI.</p>
+    </section>
+  </article>
+  <section class="author-citation" id="citation" aria-labelledby="citation-title">
+    <h2 id="citation-title">Citation</h2>
+    <p>Benlu Wang, Elizabeth Schaefer, Nicole Aguirre, Juncheng Huang, Xiawei Li, Santhi Raj Kolamuri, Lee Ying, Xinyue Li, Grace Chao, Sheryl S. Ang, Prashanth Vallabhajosyula, Harlan Krumholz, Karen E. Gibbs, Sara I. Pai, Eric B. Schneider, Arman Cohan, Chin Siang Ong. 2025. <a href="https://www.medrxiv.org/content/10.64898/2025.12.04.25341678v1">Hippocrates-o1: A Guideline-Aware, Orchestrated, Self-Refining Protocol for Specialty-Specific Clinical Reasoning</a>. <em>medRxiv</em>, version 1, December 5, 2025.</p>
+    <p><a href="citation.bib" download>Download official BibTeX</a> · <a href="https://doi.org/10.64898/2025.12.04.25341678">10.64898/2025.12.04.25341678</a></p>
+  </section>
+  <section class="author-citation" aria-labelledby="related-title">
+    <h2 id="related-title">Related publication record</h2>
+    <p><a href="https://doi.org/10.6004/jnccn.2025.7253">BPI26-028: Hippocrates-Karkinos-o1: An Enhanced Model for Oncology Decision Support and Guideline-Aware Reasoning With Self-Refinement and Guideline-Informed Retrieval</a>. <em>Journal of the National Comprehensive Cancer Network</em>, 24(3.5), March 31, 2026. <a href="https://pubmed.ncbi.nlm.nih.gov/42061427/">PubMed record</a>.</p>
+  </section>
+</main>
+<footer class="author-page-footer">
+  <p>The complete PDF and abstract are reproduced without modification from <a href="https://www.medrxiv.org/content/10.64898/2025.12.04.25341678v1">medRxiv version 1</a>. <a href="https://www.medrxiv.org/highwire/citation/1118116/bibtext">BibTeX follows the official export</a>. Copyright remains with the author/funder; the source is marked all rights reserved.</p>
+</footer>
+</body>
+</html>

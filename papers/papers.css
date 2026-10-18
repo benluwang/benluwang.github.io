@@ -36,3 +36,8 @@ article math[display="block"], article .ltx_equationgroup { overflow-x: auto; }
 pre { padding: 18px; border: 1px solid var(--line); background: #f8f9fa; overflow-x: auto; white-space: pre-wrap; overflow-wrap: anywhere; font-size: 13px; line-height: 1.6; }
 .author-page-footer { padding-block: 20px 32px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); }
 @media (max-width: 600px) { .author-page-header, .author-page-main, .author-page-footer { width: calc(100% - 28px); } article .ltx_title_document { font-size: 28px; } article table { font-size: 13px; } }
+
+.paper-list { padding-left: 24px; }
+.paper-list-item { margin: 28px 0; }
+.paper-list-item h2 { font-size: 21px; line-height: 1.4; margin-bottom: 8px; }
+.paper-list-item p { margin: 5px 0; }

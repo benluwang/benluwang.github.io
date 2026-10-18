@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>From Scores to Steps: Diagnosing and Improving LLM Performance in Evidence-Based Medical Calculations | Benlu Wang</title>
+  <meta name="description" content="Large language models (LLMs) have demonstrated promising performance on medical benchmarks; however, their ability to perform medical calculations, a crucial aspect of clinical decision-making, remains underexplored and poorly evaluated. Existing benchmarks often assess only the final answer with a wide numerical tolerance, overlooking systematic reasoning failures and potentially causing serious clinical misjudgments. In this work, we revisit medical calculation evaluation with a stronger focus on clinical trustworthiness. First, we clean and restructure the MedCalc-Bench dataset and propose a new step-by-step evaluation pipeline that independently assesses formula selection, entity extraction, and arithmetic computation. Under this granular framework, the accuracy of GPT-4o drops from 62.7% to 43.6%, revealing errors masked by prior evaluations. Second, we introduce an automatic error analysis framework that generates structured attribution for each failure mode. Human evaluation confirms its alignment with expert judgment, enabling scalable and explainable diagnostics. Finally, we propose a modular agentic pipeline, MedRaC, that combines retrieval-augmented generation and Python-based code execution. Without any fine-tuning, MedRaC improves the accuracy of different LLMs from 16.35% up to 53.19%. Our work highlights the limitations of current benchmark practices and proposes a more clinically faithful methodology. By enabling transparent and transferable reasoning evaluation, we move closer to making LLM-based systems trustworthy for real-world medical applications.">
+  <meta name="citation_title" content="From Scores to Steps: Diagnosing and Improving LLM Performance in Evidence-Based Medical Calculations">
+  <meta name="citation_author" content="Benlu Wang">
+  <meta name="citation_author" content="Iris Xia">
+  <meta name="citation_author" content="Yifan Zhang">
+  <meta name="citation_author" content="Junda Wang">
+  <meta name="citation_author" content="Feiyun Ouyang">
+  <meta name="citation_author" content="Shuo Han">
+  <meta name="citation_author" content="Arman Cohan">
+  <meta name="citation_author" content="Hong Yu">
+  <meta name="citation_author" content="Zonghai Yao">
+  <meta name="citation_publication_date" content="2025/11">
+  <meta name="citation_conference_title" content="Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing">
+  <meta name="citation_publisher" content="Association for Computational Linguistics">
+  <meta name="citation_firstpage" content="10809">
+  <meta name="citation_lastpage" content="10833">
+  <meta name="citation_doi" content="10.18653/v1/2025.emnlp-main.548">
+  <meta name="citation_pdf_url" content="https://benluwang.github.io/papers/medrac/paper.pdf">
+  <link rel="canonical" href="https://benluwang.github.io/papers/medrac/">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../papers.css">
+</head>
+<body>
+<header class="author-page-header">
+  <a href="../../">Benlu Wang · Publications</a>
+  <nav class="author-page-nav" aria-label="Paper links">
+    <a href="paper.pdf">PDF</a>
+    <a href="https://aclanthology.org/2025.emnlp-main.548/">ACL Anthology</a>
+    <a href="https://doi.org/10.18653/v1/2025.emnlp-main.548">DOI</a>
+    <a href="https://github.com/benluwang/EMNLP-2025-MedRaC">Code and data</a>
+    <a href="citation.bib">BibTeX</a>
+    <a href="#citation">Citation</a>
+  </nav>
+  <p class="author-version">Published in EMNLP 2025, November 2025, pages 10809–10833. PDF: official ACL Anthology version 2.</p>
+</header>
+<main class="author-page-main">
+  <article class="ltx_document">
+    <h1 class="ltx_title_document">From Scores to Steps: Diagnosing and Improving LLM Performance in Evidence-Based Medical Calculations</h1>
+    <p class="author-names">Benlu Wang*, Iris Xia*, Yifan Zhang, Junda Wang, Feiyun Ouyang, Shuo Han, Arman Cohan, Hong Yu, Zonghai Yao</p>
+    <p class="equal-contribution">* Equal contribution, alphabetical order.</p>
+    <section class="ltx_abstract" aria-labelledby="abstract-title">
+      <h2 class="ltx_title_section" id="abstract-title">Abstract</h2>
+      <p>Large language models (LLMs) have demonstrated promising performance on medical benchmarks; however, their ability to perform medical calculations, a crucial aspect of clinical decision-making, remains underexplored and poorly evaluated. Existing benchmarks often assess only the final answer with a wide numerical tolerance, overlooking systematic reasoning failures and potentially causing serious clinical misjudgments. In this work, we revisit medical calculation evaluation with a stronger focus on clinical trustworthiness. First, we clean and restructure the MedCalc-Bench dataset and propose a new step-by-step evaluation pipeline that independently assesses formula selection, entity extraction, and arithmetic computation. Under this granular framework, the accuracy of GPT-4o drops from 62.7% to 43.6%, revealing errors masked by prior evaluations. Second, we introduce an automatic error analysis framework that generates structured attribution for each failure mode. Human evaluation confirms its alignment with expert judgment, enabling scalable and explainable diagnostics. Finally, we propose a modular agentic pipeline, MedRaC, that combines retrieval-augmented generation and Python-based code execution. Without any fine-tuning, MedRaC improves the accuracy of different LLMs from 16.35% up to 53.19%. Our work highlights the limitations of current benchmark practices and proposes a more clinically faithful methodology. By enabling transparent and transferable reasoning evaluation, we move closer to making LLM-based systems trustworthy for real-world medical applications.</p>
+    </section>
+  </article>
+  <section class="author-citation" id="citation" aria-labelledby="citation-title">
+    <h2 id="citation-title">Citation</h2>
+    <p>Benlu Wang, Iris Xia, Yifan Zhang, Junda Wang, Feiyun Ouyang, Shuo Han, Arman Cohan, Hong Yu, and Zonghai Yao. 2025. <a href="https://aclanthology.org/2025.emnlp-main.548/">From Scores to Steps: Diagnosing and Improving LLM Performance in Evidence-Based Medical Calculations</a>. In <em>Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing</em>, pages 10809–10833, Suzhou, China. Association for Computational Linguistics.</p>
+    <p><a href="citation.bib" download>Download official BibTeX</a> · <a href="https://doi.org/10.18653/v1/2025.emnlp-main.548">10.18653/v1/2025.emnlp-main.548</a></p>
+  </section>
+</main>
+<footer class="author-page-footer">
+  <p>The complete PDF is reproduced without modification from <a href="https://aclanthology.org/2025.emnlp-main.548v2.pdf">ACL Anthology version 2</a>. Abstract and citation metadata follow the <a href="https://aclanthology.org/2025.emnlp-main.548/">official record</a>. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+</footer>
+</body>
+</html>

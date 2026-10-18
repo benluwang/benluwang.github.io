@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CPTCoder: A Reliable LLM System for Medical Procedure Code Prediction | Benlu Wang</title>
+  <meta name="description" content="We present CPTCoder, a human-in-the-loop system that predicts standardized medical procedure codes from clinical text.">
+  <meta name="citation_title" content="CPTCoder: A Reliable LLM System for Medical Procedure Code Prediction">
+  <meta name="citation_author" content="Benlu Wang">
+  <meta name="citation_author" content="Ziyao Shangguan">
+  <meta name="citation_author" content="Kyle Tegtmeyer">
+  <meta name="citation_author" content="Zhenyu Zhang">
+  <meta name="citation_author" content="Sophie Chheang">
+  <meta name="citation_author" content="Arman Cohan">
+  <meta name="citation_conference_title" content="Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 3: System Demonstrations)">
+  <meta name="citation_publication_date" content="2026/7">
+  <meta name="citation_firstpage" content="605">
+  <meta name="citation_lastpage" content="614">
+  <meta name="citation_doi" content="10.18653/v1/2026.acl-demo.60">
+  <meta name="citation_pdf_url" content="https://benluwang.github.io/papers/cptcoder/paper.pdf">
+  <link rel="canonical" href="https://benluwang.github.io/papers/cptcoder/">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../papers.css">
+</head>
+<body>
+<header class="author-page-header">
+  <a href="../../">Benlu Wang · Publications</a>
+  <nav class="author-page-nav" aria-label="Paper links">
+    <a href="paper.pdf">Full paper (PDF)</a>
+    <a href="https://aclanthology.org/2026.acl-demo.60/">ACL Anthology</a>
+    <a href="https://github.com/benluwang/CPTCoder">Project repository</a>
+    <a href="citation.bib">BibTeX</a>
+    <a href="#citation">Citation</a>
+  </nav>
+</header>
+<main class="author-page-main" id="paper">
+  <article class="ltx_document">
+    <h1 class="ltx_title ltx_title_document">CPTCoder: A Reliable LLM System for Medical Procedure Code Prediction</h1>
+    <p class="author-names">Benlu Wang, Ziyao Shangguan, Kyle Tegtmeyer, Zhenyu Zhang, Sophie Chheang, Arman Cohan</p>
+    <p class="author-version">Published version · ACL 2026 System Demonstrations · July 2026 · pages 605–614.<br>The PDF is an unmodified copy of the official ACL Anthology paper; the abstract below follows that published PDF.</p>
+    <section class="ltx_abstract" id="abstract" aria-labelledby="abstract-heading">
+      <h2 id="abstract-heading">Abstract</h2>
+      <p>We present <b>CPTCoder</b>, a human-in-the-loop system that predicts standardized medical procedure codes from clinical text. Clinical procedure coding is an extreme multi-label classification problem over a long-tailed space of short numeric identifiers, where a single-digit difference denotes an entirely different procedure. CPTCoder adapts an instruction-tuned LLM with a code-aware vocabulary and constrained decoding that guarantees all outputs are valid codes. To support human review, we derive per-code posterior inclusion probabilities from n-best reweighting, producing interpretable confidence scores that rank predictions and flag uncertain cases. A post-decoding constraint repair step enforces mutual-exclusion rules between conflicting codes. To enable reproducible research in this underexplored setting, we release <b>MIMIC-CPT</b>, a PhysioNet-accessible benchmark of 38,673 expert-cleaned report–code pairs with a deliberately hardened test split: 88% of test examples contain label combinations unseen during training, and over a third include codes with five or fewer training occurrences. We additionally provide 412,297 weakly aligned pairs and evaluate on a separate live dataset from a hospital, which includes out-of-domain radiology reports with billing-expert-verified labels. CPTCoder achieves 0.61 and 0.51 micro-F1 on the hardened MIMIC split and Hospital-298 respectively, outperforming the strongest baseline by 12 and 5 absolute points while reducing digit-level near-miss errors.</p>
+    </section>
+    <section class="author-citation" id="citation" aria-labelledby="citation-heading">
+      <h2 id="citation-heading">Citation</h2>
+      <p>Benlu Wang, Ziyao Shangguan, Kyle Tegtmeyer, Zhenyu Zhang, Sophie Chheang, and Arman Cohan. 2026. <a href="https://aclanthology.org/2026.acl-demo.60/">CPTCoder: A Reliable LLM System for Medical Procedure Code Prediction</a>. In <i>Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 3: System Demonstrations)</i>, pages 605–614, San Diego, California, United States. Association for Computational Linguistics.</p>
+      <p>DOI: <a href="https://doi.org/10.18653/v1/2026.acl-demo.60">10.18653/v1/2026.acl-demo.60</a> · <a href="citation.bib">Download official BibTeX</a></p>
+      <pre>@inproceedings{wang-etal-2026-cptcoder,
+    title = &quot;{CPTC}oder: A Reliable {LLM} System for Medical Procedure Code Prediction&quot;,
+    author = &quot;Wang, Benlu  and
+      Shangguan, Ziyao  and
+      Tegtmeyer, Kyle  and
+      Zhang, Zhenyu  and
+      Chheang, Sophie  and
+      Cohan, Arman&quot;,
+    editor = &quot;Durrett, Greg  and
+      Jian, Ping&quot;,
+    booktitle = &quot;Proceedings of the 64th Annual Meeting of the {A}ssociation for {C}omputational {L}inguistics (Volume 3: System Demonstrations)&quot;,
+    month = jul,
+    year = &quot;2026&quot;,
+    address = &quot;San Diego, California, United States&quot;,
+    publisher = &quot;Association for Computational Linguistics&quot;,
+    url = &quot;https://aclanthology.org/2026.acl-demo.60/&quot;,
+    doi = &quot;10.18653/v1/2026.acl-demo.60&quot;,
+    pages = &quot;605--614&quot;,
+    ISBN = &quot;979-8-89176-392-0&quot;
+}</pre>
+    </section>
+  </article>
+</main>
+<footer class="author-page-footer">
+  <p>Source: <a href="https://aclanthology.org/2026.acl-demo.60/">ACL Anthology, 2026.acl-demo.60</a>. Published by the Association for Computational Linguistics. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+</footer>
+</body>
+</html>
