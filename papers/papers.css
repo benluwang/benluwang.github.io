@@ -1,0 +1,38 @@
+:root { color-scheme: light; --ink: #494e52; --muted: #626970; --link: #224b8d; --line: #e9eaec; }
+* { box-sizing: border-box; }
+body { display: block; grid-template-columns: none; margin: 0; padding: 0; max-width: none; color: var(--ink); background: #fff; font-family: "Trebuchet MS", Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.65; }
+a { color: var(--link); text-decoration: none; text-underline-offset: 3px; }
+a:hover { text-decoration: underline; }
+a:focus-visible { outline: 2px solid var(--link); outline-offset: 4px; }
+.author-page-header, .author-page-main, .author-page-footer { width: min(100% - 40px, 1080px); margin-inline: auto; }
+.author-page-header { position: static; padding-block: 24px 18px; border-bottom: 1px solid var(--line); }
+.author-page-nav { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 14px; }
+.author-version { margin: 16px 0 30px; color: var(--muted); font-size: 14px; }
+.author-page-main { padding-bottom: 30px; }
+article.ltx_document { max-width: 100%; margin: 0; padding: 0; }
+article .ltx_title_document { font-size: clamp(28px, 4vw, 38px); line-height: 1.25; margin: 22px 0 18px; }
+article .ltx_title_section { font-size: 25px; line-height: 1.35; margin-top: 38px; }
+article .ltx_title_subsection { font-size: 21px; line-height: 1.4; }
+article .ltx_title_subsubsection { font-size: 18px; line-height: 1.4; }
+article .ltx_authors { margin-bottom: 22px; }
+.author-names { text-align: center; font-size: 17px; line-height: 1.8; margin: 16px 0; }
+.equal-contribution { text-align: center; font-size: 14px; color: var(--muted); }
+article .ltx_abstract { margin: 24px 0 34px; }
+article img { max-width: 100%; height: auto; }
+article figure { max-width: 100%; margin: 28px 0; }
+article figcaption { margin-top: 12px; font-size: 14px; line-height: 1.5; }
+article .ltx_table { overflow-x: auto; }
+article table { max-width: 100%; }
+article .ltx_biblist { padding-left: 28px; }
+article .ltx_bibitem { margin-bottom: 14px; overflow-wrap: anywhere; }
+article math[display="block"], article .ltx_equationgroup { overflow-x: auto; }
+.author-affiliations, .author-citation { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--line); }
+.author-affiliations .ltx_authors { display: flex; flex-wrap: wrap; gap: 18px; font-size: 14px; }
+.author-affiliations .ltx_creator { flex: 1 1 230px; }
+.author-affiliations .ltx_note_frontmatter { position: static; inset: auto; width: auto; }
+.author-affiliations .ltx_note_frontmatter .ltx_note_outer,
+.author-affiliations .ltx_note_frontmatter .ltx_note_content { width: auto; }
+.author-citation h2 { font-size: 24px; }
+pre { padding: 18px; border: 1px solid var(--line); background: #f8f9fa; overflow-x: auto; white-space: pre-wrap; overflow-wrap: anywhere; font-size: 13px; line-height: 1.6; }
+.author-page-footer { padding-block: 20px 32px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); }
+@media (max-width: 600px) { .author-page-header, .author-page-main, .author-page-footer { width: calc(100% - 28px); } article .ltx_title_document { font-size: 28px; } article table { font-size: 13px; } }

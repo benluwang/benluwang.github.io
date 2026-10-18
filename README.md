@@ -19,7 +19,7 @@ Push changes to `main` to update the site.
 
 The homepage includes a canonical URL, descriptive title, and WebSite/ProfilePage/Person
 structured data connecting Benlu Wang's public academic profiles. `robots.txt` allows
-crawling and points to `sitemap.xml`, which lists the homepage. Update the sitemap's
+crawling and points to `sitemap.xml`, which lists the homepage and the two author full-text pages. Update the sitemap's
 `lastmod` only after a meaningful page change.
 
 Use Google Search Console's URL Inspection for the actual indexing status, submit
@@ -79,3 +79,17 @@ Paper figures retain the rights and licensing of their original publications.
 PhD is an ongoing program. Predoc is a parenthetical description of the LinkedIn
 title Postgraduate Associate. No advisor title, CV download, or private project
 link is inferred.
+
+## Author full text
+
+`papers/medqa-mm/` and `papers/medthinkvqa/` provide complete static HTML manuscripts,
+local figure assets, downloadable PDFs, BibTeX, and per-article Scholar metadata.
+The MedThinkVQA page follows arXiv v2 (4 May 2026). The MedQA-MM author version
+uses the October 2 camera-ready source with a bibliographic clarification to its
+MedThinkVQA reference; its scientific text is unchanged from arXiv v2.
+The original official publication links remain in the homepage.
+
+Each page is itself the complete HTML full text. The PDFs exceed the Scholar
+5 MB PDF guideline, so they remain ordinary downloads and are not declared as
+`citation_pdf_url`. Keep metadata and displayed version notes consistent with
+the corresponding manuscripts when updating these pages.
